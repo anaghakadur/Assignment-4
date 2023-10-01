@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+    <style>
+        body {
+            width: 960px;
+            margin: 20px auto 0 auto;
+        }
+        section p:first-of-type {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        section p:last-of-type {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        div, footer {
+            background: silver;
+        }
+        nav, section, main, footer {
+            display: grid;
+            width: 960px;
+            margin-bottom: 10px;
+        }
+        nav {
+            grid-template: 80px / 200px 1fr;
+            grid-gap: 100px;
+        }
+        .items {
+            height: 50px;
+            align-self: center;
+            justify-items: center; 
+            align-items: center;
+            margin-left: 160px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        section:first-of-type {
+            height: 200px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        section:nth-of-type(2) {
+            height: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .title1 {
+            margin-right: 250px;
+        }
+        .title2 {
+            margin-left: 10px;
+            margin-right: 250px;
+        }
+        section:last-of-type {
+            height: 400px;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: auto 225px 225px;
+            grid-gap: 20px;
+        }
+        footer {
+            height: 50px;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>Company Logo</div>
+        <div class="items">
+            <span>Item 1</span>
+            <span>Item 2</span>
+            <span>Item 3</span>
+            <span>Item 4</span>
+        </div>
+    </nav>
+    <section>
+        <p>Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum zril pro.</p>
+        <p>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui an recteque maluisset assentior, cu ferri aperiam imperdiet sed.</p>
+    </section>
+    <section>
+        <div class="title1">Title</div>
+        <div class="title2">Title</div>
+    </section>
+    <section>
+        <div>Blog Post 1</div>
+        <div>Featured Product 1</div>
+        <div>Featured Product 2</div>
+        <div>Blog Post 2</div>
+        <div>Featured Product 3</div>
+        <div>Featured Product 4</div>
+    </section>
+    <footer>
+        <p>Copyright Notice</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+    <style>
+        body {
+            width: 960px;
+            margin: 20px auto 0 auto;
+        }
+        section span:first-of-type {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        section span:last-of-type {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        div, footer {
+            background: silver;
+        }
+        nav, section, main, footer {
+            display: grid;
+            width: 960px;
+            margin-bottom: 10px;
+        }
+        nav {
+            grid-template: 60px / 200px 1fr;
+            grid-gap: 100px;
+        }
+        .items {
+            height: 40px;
+            align-self: center;
+            justify-items: center; 
+            align-items: center;
+            margin-left: 160px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        section:last-of-type {
+            height: 450px;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        footer {
+            height: 40px;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>Company Logo</div>
+        <div class="items">
+            <span>Item 1</span>
+            <span>Item 2</span>
+            <span>Item 3</span>
+            <span>Item 4</span>
+        </div>
+    </nav>
+    <section>
+        <span>Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum zril pro ei.</span>
+        <span>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui an recteque maluisset assentior, cu ferri aperiam imperdiet sed.</span>
+    </section>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <footer>
+        <p>Copyright Notice</p>
+    </footer>
+</body>
+</html>
