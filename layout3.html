@@ -9,15 +9,15 @@
             width: 960px;
             margin: 20px auto 0 auto;
         }
-        section p:first-of-type {
+        section:first-of-type div:first-of-type {
             font-size: 30px;
             font-weight: bold;
-            margin-top: 10px;
-            margin-bottom: 15px;
+            padding: 50px 20px 0px 50px;
         }
-        section p:last-of-type {
+        section:first-of-type div:last-of-type {
             font-size: 20px;
             font-weight: bold;
+            padding: 0px 20px 50px 50px;
         }
         div, footer {
             background: silver;
@@ -28,7 +28,7 @@
             margin-bottom: 10px;
         }
         nav {
-            grid-template: 80px / 200px 1fr;
+            grid-template: 70px / 200px 1fr;
             grid-gap: 100px;
         }
         .items {
@@ -41,13 +41,11 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
         section:first-of-type {
-            height: 200px;
+            height: 250px;
             display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 10px;
         }
         section:nth-of-type(2) {
-            height: 50px;
+            height: 40px;
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
@@ -59,7 +57,7 @@
             margin-right: 250px;
         }
         section:last-of-type {
-            height: 400px;
+            height: 300px;
             display: grid;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: auto 225px 225px;
@@ -83,8 +81,8 @@
         </div>
     </nav>
     <section>
-        <p>Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum zril pro.</p>
-        <p>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui an recteque maluisset assentior, cu ferri aperiam imperdiet sed.</p>
+        <div>Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum zril pro.</div>
+        <div>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui an recteque maluisset assentior, cu ferri aperiam imperdiet sed.</div>
     </section>
     <section>
         <div class="title1">Title</div>
